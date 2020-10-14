@@ -1,2 +1,42 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-products-index">
+  <h1>Admin::Dashboard#show</h1>
+  <p>Find me in app/views/admin/dashboard/show.html.erb</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Ammount</th>
+      </tr>
+    </thead>
+    </tbody>
+      <% @products.each do | product | %>
+        <tr>
+          <td>
+            <%= product.name %>
+          </td>
+          <td>
+            <%= product.quantity %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>
+          TOTAL PRODUCTS:
+        </th>
+        <th>
+          <%= @products.count %>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          TOTAL CATEGORIES:
+        </th>
+        <th>
+          <%= @categories.count %>
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+</section>
