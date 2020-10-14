@@ -1,0 +1,18 @@
+<tr>
+  <td>
+    <%= purchase.product.name %>
+    <%= image_tag purchase.product.image.tiny %>
+  </td>
+  <td>
+    <%= purchase.product.description %>
+  </td>
+  <td>
+    <%= purchase.quantity %>
+  </td>
+  <td>
+    <%= humanized_money_with_symbol purchase.item_price %>
+  </td>
+  <td>
+    <%= humanized_money_with_symbol purchase.total_price %>
+  </td>
+</tr>

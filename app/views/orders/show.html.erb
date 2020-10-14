@@ -5,9 +5,35 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+    <h4>Thank you for your order! An email will be sent to <%= @order.email %></h4>
   </div>
-
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="2">Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% i = 0 %>
+      <% while i < @order.line_items.length %>
+        <%= render 'item', purchase: @order.line_items[i] %>
+        <% i += 1 %>
+      <% end %>
+    </tbody>
+    <tfoot>
+          <tr>
+            <th colspan="4">
+              ORDER TOTAL:
+            </th>
+            <th>
+              <%= humanized_money_with_symbol @order.total_cents / 100 %>
+            </th>
+          </tr>
+        </tfoot>
+  </table>
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
