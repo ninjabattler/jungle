@@ -28,6 +28,20 @@
         <li>
           <%= link_to 'About', about_index_url %>
         </li>
+        <li>
+          <% if current_user %>
+            <%= link_to "Signed in as #{current_user.first_name} #{current_user.last_name}", '/' %>
+          <% else %>
+            <%= link_to 'Login', '/login' %>
+          <% end %>
+        </li>
+        <li>
+          <% if current_user %>
+            <%= link_to "Logout", '/logout' %>
+          <% else %>
+            <%= link_to 'Signup', '/signup' %>
+          <% end %>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">

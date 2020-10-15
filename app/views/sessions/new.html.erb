@@ -1,0 +1,18 @@
+<header class="page-header">
+  <h1>Login</h1>
+</header>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1">
+    <%= form_tag '/login' do %>
+
+      <h3>Email: </h3>
+      <%= text_field_tag :email %>
+      <h3>Password: </h3>
+      <%= password_field_tag :password %>
+      <br>
+      <br>
+      <%= submit_tag "Submit", class: 'btn btn-primary' %>
+
+    <% end %>
+  </div>
+</div>
