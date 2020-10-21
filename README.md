@@ -28,8 +28,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-!['Products'](docs/Products.png)
-!['SmartWatch'](docs/SmartWatch.png)
-!['Signup'](docs/Signup.png)
-!['Furniture'](docs/Furniture.png)
-!['Admin Products'](docs/AdminProducts.png)
+!['Products'](https://github.com/ninjabattler/jungle/blob/master/docs/Products.png?raw=true)
+!['SmartWatch'](https://github.com/ninjabattler/jungle/blob/master/docs/SmartWatch.png?raw=true)
+!['Signup'](https://github.com/ninjabattler/jungle/blob/master/docs/Signup.png?raw=true)
+!['Furniture'](https://github.com/ninjabattler/jungle/blob/master/docs/Furniture.png?raw=true)
+!['Admin Products'](https://github.com/ninjabattler/jungle/blob/master/docs/Admin%20Products.png?raw=true)
